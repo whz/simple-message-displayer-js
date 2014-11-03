@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Receiver</title>
+</head>
+<body bgcolor="#FFFFFF">
+<div id="msg" style="font-size: 2em; text-align: center;">..waiting for msg..</div>
+
+
+<script type="text/javascript">
+<!--
+var msg = "";
+function update_msg(){
+	if (msg != localStorage.getItem('msg')) {
+		msg = localStorage.getItem('msg');
+		document.getElementById("msg").innerHTML = msg;
+	}
+
+	setTimeout(update_msg, 1*1000);
+
+}
+
+update_msg();
+
+//-->
+
+</script>
+</body>
+</html>

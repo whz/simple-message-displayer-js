@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Sender</title>
+</head>
+<body bgcolor="#FFFFFF">
+<div align="center">
+
+<input type="text" id="msg" onkeypress="return sendMsg(event)" />
+<script type="text/javascript">
+<!--
+function sendMsg(e) {
+	if (!e) e = window.event;
+	var keyCode = e.keyCode || e.which;
+	if (keyCode == '13'){
+		localStorage.setItem('msg',document.getElementById("msg").value);
+		document.getElementById("msg").value = "";
+		return false;
+	}
+}
+
+//-->
+
+</script>
+
+</div>
+</body>
+</html>
